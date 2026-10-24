@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Redline — Daily Supercar News</title>
+<meta name="description" content="What the internet is talking about in supercars and sports cars, refreshed every day.">
+<meta name="theme-color" content="#0b0b10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Redline">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 6a18 18 0 0 0-18 18c0 5 2 9.5 5.3 12.7l3.4-3.4A13.2 13.2 0 0 1 10.8 24 13.2 13.2 0 1 1 33.3 33.3l3.4 3.4A18 18 0 0 0 24 6z" fill="currentColor" opacity=".45"/>
+        <path d="M31.6 12.5 26 22.6a3.6 3.6 0 1 0 3 2.1l5.8-9.9-3.2-2.3z" fill="#e8102d"/>
+      </svg>
+      <h1>RED<span>LINE</span></h1>
+    </div>
+    <div class="updated" id="updated"></div>
+  </div>
+  <div class="searchrow">
+    <input id="search" type="search" placeholder="Search Ferrari, GT3, Nürburgring…" autocomplete="off">
+  </div>
+  <nav class="chips" id="chips" aria-label="Filter by brand"></nav>
+</header>
+
+<main id="feed" class="feed" aria-live="polite">
+  <div class="state" id="state">Loading the latest…</div>
+</main>
+
+<footer class="foot">
+  <p>Headlines are aggregated from public feeds; tap any card to read the full story at its source. Auto-refreshed daily.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
